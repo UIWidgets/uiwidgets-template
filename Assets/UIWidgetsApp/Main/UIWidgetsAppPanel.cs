@@ -1,12 +1,25 @@
+using System.Collections.Generic;
 using Unity.UIWidgets.engine;
-using Unity.UIWidgets.ui;
 using Unity.UIWidgets.widgets;
-using ui_ = Unity.UIWidgets.widgets.ui_;
 
-namespace UIWidgetsApp.Main {
-    public sealed class UIWidgetsAppPanel : UIWidgetsPanel {
-        protected override void main() {
-            ui_.runApp(new Container(color: Color.black));
+namespace UIWidgetsApp.Main
+{
+    public sealed class UIWidgetsAppPanel : UIWidgetsPanel
+    {
+        protected override void main()
+        {
+            ui_.runApp(new UIWidgetsApp());
+        }
+
+        protected override void onEnable()
+        {
+            LoadFonts();
+            base.onEnable();
+        }
+
+        private void LoadFonts()
+        {
+            AddFont("Material Icons", new List<string> { "Font/Material-Icons.ttf" }, new List<int> { 0 });
         }
     }
 }
