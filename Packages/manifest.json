@@ -9,6 +9,7 @@
     "com.unity.timeline": "1.2.18",
     "com.unity.toolchain.macos-x86_64-linux-x86_64": "2.0.0",
     "com.unity.ugui": "1.0.0",
+    "com.unity.uiwidgets": "file:../thirdparty/com.unity.uiwidgets/com.unity.uiwidgets",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",
     "com.unity.modules.assetbundle": "1.0.0",

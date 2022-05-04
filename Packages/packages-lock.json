@@ -106,6 +106,12 @@
         "com.unity.modules.imgui": "1.0.0"
       }
     },
+    "com.unity.uiwidgets": {
+      "version": "file:../thirdparty/com.unity.uiwidgets/com.unity.uiwidgets",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {}
+    },
     "com.unity.modules.androidjni": {
       "version": "1.0.0",
       "depth": 0,
