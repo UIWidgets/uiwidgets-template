@@ -46,6 +46,11 @@ namespace UIWidgetsApp.Main
                     builder = (context, animation, secondaryAnimation) => new PageScreenConnector(arg.pageName);
                     break;
                 }
+                case NavigatorRoutes.Refresh:
+                {
+                    builder = (context, animation, secondaryAnimation) => new RefreshListScreen();
+                    break;
+                }
                 default:
                     builder = null;
                     break;
@@ -75,5 +80,6 @@ namespace UIWidgetsApp.Main
     {
         public const string Root = "/";
         public const string Page = "/page";
+        public const string Refresh = "/refresh";
     }
 }

@@ -66,6 +66,14 @@ namespace UIWidgetsApp.Screen
                         children: new List<Widget>
                         {
                             new FlatButton(
+                                onPressed: () => Navigator.pushNamed(context, NavigatorRoutes.Refresh),
+                                color: Colors.blueAccent,
+                                child: new Text(
+                                    "Jump to RefreshListPage",
+                                    style: new TextStyle(color: Colors.white, fontSize: 12)
+                                )
+                            ),
+                            new FlatButton(
                                 onPressed: () => Navigator.pushNamed(context, NavigatorRoutes.Page,
                                     new PageScreenArguments { pageName = "page1" }),
                                 color: Colors.blueAccent,
